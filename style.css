@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -29,14 +28,24 @@ header {
   font-weight: bold;
 }
 
+
 .nav-links {
-  display: flex;
-  gap: 20px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #111;
+  flex-direction: column;
+  width: 200px;
+  display: none;
+  text-align: right;
+  padding: 20px;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
+  margin: 10px 0;
+  display: block;
   transition: 0.3s;
 }
 
@@ -45,10 +54,15 @@ header {
 }
 
 
+.nav-links.active {
+  display: flex;
+}
+
+
 .hamburger {
-  display: none;
   font-size: 1.8rem;
   cursor: pointer;
+  user-select: none;
 }
 
 
@@ -77,7 +91,6 @@ header {
   font-size: 1.2rem;
 }
 
-
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -88,26 +101,4 @@ header {
   width: 100%;
   border-radius: 10px;
   margin: 20px 0;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #111;
-    flex-direction: column;
-    width: 200px;
-    display: none;
-    text-align: right;
-    padding: 20px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
 }
