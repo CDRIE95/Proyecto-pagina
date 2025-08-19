@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectura Moderna</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura Moderna</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Arquitectura</div>
-        <nav class="nav" id="nav">
-            <a href="index.html">Home</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    </header>
+  
+  <header>
+    <div class="logo">Arquitectura</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </header>
+    
+  <section id="home" class="hero">
+    <div class="overlay">
+      <h1>Arquitectura Moderna</h1>
+      <p>Explorando diseños innovadores y funcionales para el futuro</p>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Arquitectura Moderna</h1>
-            <p>Explorando diseños innovadores y funcionales para el futuro</p>
-        </div>
-    </section>
 
-    <section>
-        <h2>Bienvenido a nuestra página</h2>
-        <p>Aquí encontrarás información sobre arquitectura moderna y proyectos destacados.</p>
-    </section>
+  <section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <img src="edificio2.jpg" alt="Edificio moderno">
+    <p>Somos un equipo apasionado por la arquitectura contemporánea, fusionando estética y funcionalidad.</p>
+  </section>
 
-    <script src="script.js"></script>
+  
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Puedes comunicarte con nosotros para más información.</p>
+  </section>
+
+  <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
