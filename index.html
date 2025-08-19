@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arquitectura Moderna</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Moderna</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo">Arquitectura</div>
-    <nav class="nav-links" id="nav-links">
-      <a href="#home">Home</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="hamburger" id="hamburger">☰</div>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Arquitectura</div>
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-  <section id="home" class="hero">
-    <div class="overlay">
-      <h1>Arquitectura Moderna</h1>
-      <p>Explorando diseños innovadores y funcionales para el futuro</p>
-    </div>
-  </section>
+    <section id="home" class="home">
+        <div class="overlay">
+            <h1>Bienvenido a la Arquitectura Moderna</h1>
+            <p>Descubre la belleza de las formas, los espacios y el diseño.</p>
+        </div>
+    </section>
 
+  
+    <section id="nosotros" class="section">
+        <h2>Nosotros</h2>
+        <p>Somos un equipo apasionado por la arquitectura contemporánea, enfocada en la innovación, 
+        la sostenibilidad y el diseño de espacios funcionales y estéticos.</p>
+    </section>
 
-  <section id="nosotros" class="section">
-    <h2>Sobre Nosotros</h2>
-    <img src="edificio2.jpg" alt="Edificio moderno">
-    <p>Somos un equipo apasionado por la arquitectura contemporánea, fusionando estética y funcionalidad.</p>
-  </section>
+  
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
- 
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>Puedes comunicarte con nosotros para más información.</p>
-  </section>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required>
 
-  <script>
- 
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
