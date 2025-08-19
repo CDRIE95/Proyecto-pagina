@@ -9,6 +9,7 @@ body {
     background: #f9f9f9;
     color: #333;
     padding-top: 70px; 
+    margin: 0;
 }
 
 header {
@@ -36,11 +37,11 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;  
     background-color: #222;
     padding: 15px 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     gap: 30px; 
     z-index: 1000;
 }
