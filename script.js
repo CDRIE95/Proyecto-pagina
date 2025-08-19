@@ -1,6 +1,6 @@
 const menuToggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
+const navLinks = document.getElementById("nav-links");
 
 menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
 });
