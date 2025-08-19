@@ -10,6 +10,8 @@ body {
     color: #333;
     padding-top: 70px; 
     margin: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -47,16 +49,16 @@ nav {
 }
 
 nav a {
-    color: white;
-    margin: 0 20px;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #ffcc00;
+    color: #f0a500;
 }
 
 
@@ -130,4 +132,10 @@ form button:hover {
     background: #ffcc00;
     color: black;
     transition: 0.3s;
+}
+
+img {
+    max-width: 100%;  
+    height: auto;     
+    display: block;
 }
