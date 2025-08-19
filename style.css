@@ -19,6 +19,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: url("img/edificio1.jpg") center/cover no-repeat;
+    color: white;
+    position: relative;
+
 }
 
 header h1 {
@@ -33,12 +37,10 @@ nav {
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
-    position: fixed;
+    position: absolute;
     top: 20px;
-    right: 20px;
-    background: rgba(0,0,0,0.6);
-    padding: 10px 20px;
-    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav a {
