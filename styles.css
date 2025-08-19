@@ -76,7 +76,7 @@ nav ul.active {
     margin-bottom: 10px;
 }
 
-/* Contenido */
+
 .contenido {
     padding: 100px 20px;
     text-align: center;
@@ -89,7 +89,6 @@ nav ul.active {
     border-radius: 10px;
 }
 
-/* Contacto */
 .contact-form {
     max-width: 500px;
     margin: auto;
@@ -116,4 +115,16 @@ nav ul.active {
 
 .contact-form button:hover {
     background: #555;
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.nosotros img {
+    width: 50%;
+    border-radius: 10px;
 }
